@@ -6,7 +6,7 @@ pipeline {
             steps 
             {
                 sh '''#!/bin/bash
-                echo Build Stage
+                javac Hello.java
                 '''
             }
         }
@@ -15,7 +15,7 @@ pipeline {
             steps 
             {
                 sh '''#!/bin/bash
-                echo Execute Stage
+                java Hello
                 '''
             }
         }
