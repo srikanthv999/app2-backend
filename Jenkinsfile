@@ -6,7 +6,7 @@ pipeline {
             steps 
             {
                 sh '''#!/bin/bash
-                javac Hello.java
+                mvn compiler:compile
                 '''
             }
         }
@@ -24,7 +24,7 @@ pipeline {
             steps 
             {
                 sh '''#!/bin/bash
-                echo Test Stage
+                mvn test
                 '''
             }
         }
